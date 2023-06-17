@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .progress {
+        background-color: red;
+        height: 3px;
+        animation: load 1s ease-in-out 1;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background-color: black;
+        height: 112px;
+      }
+      main {
+        background-color: blue;
+        height: 100vh;
+        /* animation: rotate 1s ease-in-out 1; */
+        justify-content: center;
+        align-items: center;
+      }
+      @keyframes load {
+        0% {
+          width: 20vw;
+        }
+        40% {
+          width: 40vw;
+        }
+        100% {
+          width: 100vw;
+        }
+      }
+      @keyframes rotate {
+        50% {
+          transform: rotate(90deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      img {
+        /* animation: rotate 1s ease-in-out 1; */
+        background-color: blue;
+      }
+      .slider {
+        background-color: white;
+        height: 550px;
+        width: fit-content;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+      }
+      .img1 {
+        transform: translate(0vw);
+      }
+      .img2 {
+        transform: translate(100vw);
+      }
+      .img3 {
+        transform: translate(-100vw);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="progress"></div>
+    <header></header>
+    <main>
+      <!-- <img src="dragon.png" alt="" width="432px" height="321px"> -->
+      <div class="slider">
+        <img
+          class="img1"
+          src="boxwater.png"
+          alt=""
+          width="1550px"
+          height="550px"
+        />
+        <img
+          class="img2"
+          src="boxwater.png"
+          alt=""
+          width="1550px"
+          height="550px"
+        />
+        <img
+          class="img3"
+          src="boxwater.png"
+          alt=""
+          width="1550px"
+          height="550px"
+        />
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: red;
+            height: 50vh;
+        }
+        .box{
+          border: 2px solid black;
+            color: aliceblue;
+            padding: 3px 12px;
+            /* height: 16vh; */
+            display: inline-block;
+             /* transform: translate(134px, 56px) rotate(45deg);  */
+             /* transform-origin: 0; */
+            /* transform: scale(4, 7); */
+            /* transform: scaleX(4);
+           transform: scaleY(7); */
+           /* transform: skew(4deg, 7deg); */
+           /* transform: skew(0, 8deg); */
+           /* background-image: url(doctor1.jpg); */
+        }
+    
+           img{
+            width: 445px;
+            height: 432px;
+            /* transition-property: width;
+            transition-duration: 1s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s; */
+            transition: width 1s ease-in 4s, height 4s ease-in;
+           }
+        img:hover{
+            width: 56px;
+            height: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"><img src="https://source.unsplash.com/WLUHO9A_xik/200x110">
+            <!-- <button id="btn">toggle</button> -->
+    </div>
+</body>
+<!-- <script>
+    btn.addEventListener("click", ()=>{
+       if(myimage.style.width === '546px'){
+           myimage.style.width = "146px";
+        }
+        if (myimage) {
+            
+        } else {
+            
+        }
+    })
+    
+</script> -->
+</html>
